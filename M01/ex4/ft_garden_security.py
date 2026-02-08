@@ -5,7 +5,7 @@ class Plant:
         self._age = 0
         print(f"Plan created: {self.name}")
 
-    def set_height(self, h) -> None:
+    def set_height(self, h: int) -> None:
         if h > 0:
             self.height = h
             print(f"Height updated: {h}cm [OK]")
@@ -13,7 +13,7 @@ class Plant:
             print(f"Invalid operation attempted: height {h}cm [REJECTED]")
             print("Security: Negative height rejected")
 
-    def set_age(self, a) -> None:
+    def set_age(self, a: int) -> None:
         if a > 0:
             self.age = a
             print(f"Age updated: {a} [OK]")

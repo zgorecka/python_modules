@@ -3,11 +3,11 @@ class Plant:
         self.name = name
         self.height = height
         self.age = age
-    
-    def grow(self):
+
+    def grow(self) -> None:
         self.height += 1
 
-    def old(self):
+    def old(self) -> None:
         self.age += 1
 
     def get_info(self) -> str:
